@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2022-10-13T13:57:26Z",
+        "CreationDate": "2022-10-13T18:42:31Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -17,8 +17,8 @@
         },
         "Owner": "  <>",
         "Size": {
-            "X": 23.378,
-            "Y": 14.7988
+            "X": 14.7988,
+            "Y": 23.378
         }
     }
 }
