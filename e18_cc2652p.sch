@@ -2794,26 +2794,26 @@ LED</description>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="L3" library="discretes-dev" deviceset="IND0402" device="IND0402"/>
-<part name="C3" library="discretes-dev" deviceset="CAP0402" device=""/>
-<part name="C4" library="discretes-dev" deviceset="CAP0402" device=""/>
-<part name="C9" library="discretes-dev" deviceset="CAP0402" device=""/>
-<part name="C10" library="discretes-dev" deviceset="CAP0402" device=""/>
-<part name="C19" library="discretes-dev" deviceset="CAP0402" device=""/>
-<part name="C21" library="discretes-dev" deviceset="CAP0402" device=""/>
+<part name="L3" library="discretes-dev" deviceset="IND0402" device="IND0402" value="2.4uH"/>
+<part name="C3" library="discretes-dev" deviceset="CAP0402" device="" value="1pf"/>
+<part name="C4" library="discretes-dev" deviceset="CAP0402" device="" value="12pf"/>
+<part name="C9" library="discretes-dev" deviceset="CAP0402" device="" value="1pf"/>
+<part name="C10" library="discretes-dev" deviceset="CAP0402" device="" value="1pf"/>
+<part name="C19" library="discretes-dev" deviceset="CAP0402" device="" value="12pf"/>
+<part name="C21" library="discretes-dev" deviceset="CAP0402" device="" value="1.8pf"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="L4" library="discretes-dev" deviceset="IND0402" device="IND0402"/>
-<part name="L5" library="discretes-dev" deviceset="IND0402" device="IND0402"/>
-<part name="L6" library="discretes-dev" deviceset="IND0402" device="IND0402"/>
-<part name="C20" library="discretes-dev" deviceset="CAP0402" device=""/>
-<part name="C22" library="discretes-dev" deviceset="CAP0402" device=""/>
+<part name="L4" library="discretes-dev" deviceset="IND0402" device="IND0402" value="2.4uH"/>
+<part name="L5" library="discretes-dev" deviceset="IND0402" device="IND0402" value="2uH"/>
+<part name="L6" library="discretes-dev" deviceset="IND0402" device="IND0402" value="2uH"/>
+<part name="C20" library="discretes-dev" deviceset="CAP0402" device="" value="6.8pf"/>
+<part name="C22" library="discretes-dev" deviceset="CAP0402" device="" value="6.8pf"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$1" library="SparkFun-RF2" deviceset="ANTENNA-GROUNDED-BLE" device=""/>
 <part name="X1" library="adafruit" deviceset="ANTENNA_U.FL" device="" package3d_urn="urn:adsk.eagle:package:6240943/1"/>
-<part name="C23" library="discretes-dev" deviceset="CAP0402" device=""/>
+<part name="C23" library="discretes-dev" deviceset="CAP0402" device="" value="1.8pf"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_11" device="1X8-1.27MM" package3d_urn="urn:adsk.eagle:package:38254/1"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_11" device="1X8-1.27MM" package3d_urn="urn:adsk.eagle:package:38254/1"/>
 <part name="J3" library="SparkFun-Connectors" deviceset="CONN_11" device="1X8-1.27MM" package3d_urn="urn:adsk.eagle:package:38254/1"/>
