@@ -2828,6 +2828,8 @@ LED</description>
 <part name="G" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-GREEN" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="GREEN"/>
 <part name="R5" library="ok-discretes-dev" deviceset="RES" device="-0402" value="4.7K"/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C24" library="ok-discretes-dev" deviceset="CAP" device="-0402" value="100n"/>
+<part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3084,6 +3086,13 @@ LED</description>
 </instance>
 <instance part="GND21" gate="1" x="104.14" y="40.64" smashed="yes">
 <attribute name="VALUE" x="101.6" y="38.1" size="1.778" layer="96"/>
+</instance>
+<instance part="C24" gate="A" x="12.7" y="15.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="9.017" y="17.2974" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="9.017" y="14.7574" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND22" gate="1" x="12.7" y="7.62" smashed="yes">
+<attribute name="VALUE" x="10.16" y="5.08" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -3342,6 +3351,11 @@ LED</description>
 <wire x1="104.14" y1="48.26" x2="104.14" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C24" gate="A" pin="1"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="10.16" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -3372,8 +3386,12 @@ LED</description>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VCC"/>
-<wire x1="15.24" y1="20.32" x2="7.62" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="20.32" x2="12.7" y2="20.32" width="0.1524" layer="91"/>
 <label x="7.62" y="20.32" size="1.778" layer="95"/>
+<pinref part="C24" gate="A" pin="2"/>
+<wire x1="12.7" y1="20.32" x2="7.62" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="17.78" x2="12.7" y2="20.32" width="0.1524" layer="91"/>
+<junction x="12.7" y="20.32"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
