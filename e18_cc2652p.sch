@@ -2799,8 +2799,7 @@ LED</description>
 <part name="C4" library="discretes-dev" deviceset="CAP0402" device="" value="12pf"/>
 <part name="C9" library="discretes-dev" deviceset="CAP0402" device="" value="1pf"/>
 <part name="C10" library="discretes-dev" deviceset="CAP0402" device="" value="1pf"/>
-<part name="C19" library="discretes-dev" deviceset="CAP0402" device="" value="12pf"/>
-<part name="C21" library="discretes-dev" deviceset="CAP0402" device="" value="1.8pf"/>
+<part name="C19" library="discretes-dev" deviceset="CAP0402" device="" value="2.2pf"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -2813,7 +2812,6 @@ LED</description>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$1" library="SparkFun-RF2" deviceset="ANTENNA-GROUNDED-BLE" device=""/>
 <part name="X1" library="adafruit" deviceset="ANTENNA_U.FL" device="" package3d_urn="urn:adsk.eagle:package:6240943/1"/>
-<part name="C23" library="discretes-dev" deviceset="CAP0402" device="" value="1.8pf"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_11" device="1X8-1.27MM" package3d_urn="urn:adsk.eagle:package:38254/1"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_11" device="1X8-1.27MM" package3d_urn="urn:adsk.eagle:package:38254/1"/>
 <part name="J3" library="SparkFun-Connectors" deviceset="CONN_11" device="1X8-1.27MM" package3d_urn="urn:adsk.eagle:package:38254/1"/>
@@ -2830,6 +2828,8 @@ LED</description>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C24" library="ok-discretes-dev" deviceset="CAP" device="-0402" value="100n"/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R6" library="ok-discretes-dev" deviceset="RES" device="-0402" value="0"/>
+<part name="R7" library="ok-discretes-dev" deviceset="RES" device="-0402" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -2991,9 +2991,6 @@ LED</description>
 <instance part="C19" gate="G$1" x="287.02" y="71.12" smashed="yes" rot="R90">
 <attribute name="NAME" x="285.369" y="75.184" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="C21" gate="G$1" x="297.18" y="71.12" smashed="yes" rot="R90">
-<attribute name="NAME" x="295.529" y="72.644" size="1.778" layer="95" font="vector" rot="R90"/>
-</instance>
 <instance part="GND3" gate="1" x="213.36" y="45.72" smashed="yes">
 <attribute name="VALUE" x="210.82" y="43.18" size="1.778" layer="96"/>
 </instance>
@@ -3031,9 +3028,6 @@ LED</description>
 <instance part="X1" gate="G$1" x="307.34" y="60.96" smashed="yes" rot="R180">
 <attribute name="NAME" x="309.88" y="57.658" size="1.27" layer="95" rot="R180"/>
 <attribute name="VALUE" x="309.88" y="71.12" size="1.27" layer="96" rot="R180"/>
-</instance>
-<instance part="C23" gate="G$1" x="297.18" y="60.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="295.529" y="62.484" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
 <instance part="J1" gate="G$1" x="261.62" y="27.94" smashed="yes">
 <attribute name="VALUE" x="256.54" y="15.494" size="1.778" layer="96" font="vector"/>
@@ -3093,6 +3087,14 @@ LED</description>
 </instance>
 <instance part="GND22" gate="1" x="12.7" y="7.62" smashed="yes">
 <attribute name="VALUE" x="10.16" y="5.08" size="1.778" layer="96"/>
+</instance>
+<instance part="R6" gate="G$1" x="297.18" y="71.12" smashed="yes">
+<attribute name="NAME" x="295.6814" y="68.58" size="1.778" layer="95"/>
+<attribute name="VALUE" x="297.942" y="73.66" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R7" gate="G$1" x="297.18" y="60.96" smashed="yes">
+<attribute name="NAME" x="295.6814" y="58.42" size="1.778" layer="95"/>
+<attribute name="VALUE" x="297.942" y="63.5" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -3497,30 +3499,16 @@ LED</description>
 <wire x1="279.4" y1="71.12" x2="283.21" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="C21" gate="G$1" pin="2"/>
-<pinref part="U$1" gate="G$1" pin="SIGNAL"/>
-<wire x1="300.99" y1="71.12" x2="304.8" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="C21" gate="G$1" pin="1"/>
 <pinref part="C19" gate="G$1" pin="2"/>
 <wire x1="290.83" y1="71.12" x2="292.1" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="71.12" x2="293.37" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="292.1" y1="71.12" x2="292.1" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="294.64" y1="71.12" x2="292.1" y2="71.12" width="0.1524" layer="91"/>
 <junction x="292.1" y="71.12"/>
-<pinref part="C23" gate="G$1" pin="1"/>
-<wire x1="292.1" y1="60.96" x2="293.37" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="C23" gate="G$1" pin="2"/>
-<pinref part="X1" gate="G$1" pin="SIGNAL"/>
-<wire x1="300.99" y1="60.96" x2="302.26" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="294.64" y1="60.96" x2="292.1" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -3864,6 +3852,20 @@ LED</description>
 <pinref part="G" gate="G$1" pin="A"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="48.26" x2="119.38" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="X1" gate="G$1" pin="SIGNAL"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="302.26" y1="60.96" x2="299.72" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="SIGNAL"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="304.8" y1="71.12" x2="299.72" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
