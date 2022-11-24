@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2022-10-26T19:15:11Z",
+        "CreationDate": "2022-11-24T08:50:29Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -15,7 +15,7 @@
         "Name": {
             "ProjectId": "e18_cc2652p"
         },
-        "Owner": "  <>",
+        "Owner": "D A <deaxx13@gmail.com>",
         "Size": {
             "X": 14.7988,
             "Y": 23.378
